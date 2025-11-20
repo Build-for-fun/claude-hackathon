@@ -7,8 +7,9 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
-    "dev": "ts-node src/index.ts",
-    "test": "ts-node test_server.ts"
+    "dev": "tsx src/index.ts",
+    "test": "tsx test_server.ts",
+    "test:analysis": "tsx test_analysis.ts"
   },
   "keywords": [
     "mcp",
@@ -18,12 +19,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.1",
     "@modelcontextprotocol/sdk": "^0.6.0",
+    "pdfjs-dist": "^5.4.394",
     "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.3.3"
   }
 }
