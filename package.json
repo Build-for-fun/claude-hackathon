@@ -1,0 +1,29 @@
+{
+  "name": "user-memory-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "User Memory MCP Server",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "ts-node test_server.ts"
+  },
+  "keywords": [
+    "mcp",
+    "memory",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
